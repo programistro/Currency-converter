@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Этот код был создан программным средством.
+    Он был создан на основе файла шаблона C:\Projects\dotnet\Avalon.Converter\Avalon.Converter\Avalon.Converter.Android\Properties\AndroidManifest.xml
+    Изменения, внесенные в этот файл, могут привести к неправильному поведению и будут потеряны
+    в случае повторного создания содержимого.
+    -->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="auto" android:versionCode="1" package="com.CompanyName.Avalon.Converter" android:versionName="1.0">
+  <uses-sdk android:minSdkVersion="21" android:targetSdkVersion="33" />
+  <uses-permission android:name="android.permission.INTERNET" />
+  <application android:label="Avalon.Converter" android:icon="@drawable/icon" android:name="android.app.Application" android:allowBackup="true" android:debuggable="true" android:extractNativeLibs="true">
+    <activity android:configChanges="orientation|screenSize|uiMode" android:icon="@drawable/icon" android:label="Avalon.Converter.Android" android:theme="@style/MyTheme.NoActionBar" android:name="crc645a945aaf722ccd4a.MainActivity" android:exported="true">
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN" />
+        <category android:name="android.intent.category.LAUNCHER" />
+      </intent-filter>
+    </activity>
+    <provider android:name="mono.MonoRuntimeProvider" android:exported="false" android:initOrder="1999999999" android:authorities="com.CompanyName.Avalon.Converter.mono.MonoRuntimeProvider.__mono_init__" />
+  </application>
+</manifest>

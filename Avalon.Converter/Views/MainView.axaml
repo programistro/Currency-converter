@@ -1,0 +1,31 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:vm="clr-namespace:Avalon.Converter.ViewModels"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             x:Class="Avalon.Converter.Views.MainView"
+             x:DataType="vm:MainViewModel">
+	<Design.DataContext>
+		<vm:MainViewModel />
+	</Design.DataContext>
+
+	<Grid>
+		<TabControl>
+			<!--<TabItem Header="Калькулятор">
+				<Grid>
+					
+
+				</Grid>
+			</TabItem>-->
+			<TabItem Header="Курс валюты">
+				<DataGrid ItemsSource="{Binding Course}" CanUserResizeColumns="True">
+					<DataGrid.Columns>
+						<DataGridTextColumn Header="Валюта"  Binding="{Binding Currency}" IsReadOnly="True" FontSize="18"/>
+						<DataGridTextColumn Header="Цена" Binding="{Binding Price}" IsReadOnly="True" FontSize="18"/>
+					</DataGrid.Columns>
+				</DataGrid>
+			</TabItem>
+		</TabControl>
+	</Grid>
+</UserControl>
